@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tela Animada — Exemplo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage">
+    <!-- Background animated blobs -->
+    <div class="blobs">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+
+    <!-- Foreground content card -->
+    <section class="card" aria-live="polite">
+      <div class="logo-wrap" id="logoWrap" aria-hidden="true">
+        <svg class="logo" viewBox="0 0 100 100" width="80" height="80" role="img" aria-label="Logo">
+          <!-- Simple rounded square logo -->
+          <rect x="10" y="10" width="80" height="80" rx="18" ry="18" />
+          <circle cx="50" cy="40" r="10" />
+        </svg>
+      </div>
+
+      <h1 class="title" id="title">Seja bem-vindo(a)</h1>
+      <p class="subtitle" id="subtitle">Estamos preparando sua experiência.</p>
+
+      <div class="cta-row">
+        <button class="btn primary" id="getStarted">Começar</button>
+        <button class="btn ghost" id="learnMore">Saber mais</button>
+      </div>
+    </section>
+
+    <!-- Decorative floating items (like small cards/icons) -->
+    <div class="floaters" aria-hidden="true">
+      <div class="floater f1"></div>
+      <div class="floater f2"></div>
+      <div class="floater f3"></div>
+    </div>
+
+    <!-- Small hint at bottom -->
+    <div class="hint">Deslize para cima • <span id="dots">•••</span></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
